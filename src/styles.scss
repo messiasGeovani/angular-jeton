@@ -23,7 +23,32 @@ input {
 
 :root {
   --primary: #4984ef;
+  --primary-hover: #336fd6;
   --secondary: #fafbfe;
   --tertiary: #fafafa;
   --gray: #bbbcbf;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
 }
