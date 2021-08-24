@@ -9,4 +9,9 @@ div.content {
   > header {
     z-index: 3;
   }
+
+  > main {
+    max-height: 100%;
+    overflow-y: auto;
+  }
 }
