@@ -3,7 +3,7 @@ div.container {
 
   background: var(--secondary);
 
-  padding: 0 100px;
+  padding: 50px 100px 0;
 
   h2 {
     font-size: 50px;
@@ -55,17 +55,28 @@ div.marketplace-wrapper {
 div.app-screen-wrapper {
   margin-right: 50px;
 
-  > img {
-    max-height: 80vh;
+  > span {
+    height: 660px;
+    width: 350px;
+    background: url("../../../assets/images/phone-bg.png") no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 1px 2px 7px var(--gray);
+    padding: 62px 21px;
+  }
 
-    &:first-child {
-      max-height: 65.1vh;
-      position: absolute;
-    }
+  img {
+    height: 100%;
+    width: 100%;
+  }
 
-    &:last-child {
-      border-radius: 40px;
-      box-shadow: 1px 2px 7px var(--gray);
+  @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    margin-right: 60px;
+
+    > span {
+      height: 510px;
+      width: 270px;
+      padding: 49px 16px;
     }
   }
 }
