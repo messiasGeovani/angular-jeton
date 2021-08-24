@@ -1,0 +1,12 @@
+div.content {
+  display: grid;
+
+  grid-template-columns: auto;
+  grid-template-rows: 60px auto;
+
+  grid-template-areas:
+    "NAV"
+    "MAIN";
+
+  height: 100vh;
+}
