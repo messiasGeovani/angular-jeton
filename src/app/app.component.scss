@@ -2,11 +2,7 @@ div.content {
   display: grid;
 
   grid-template-columns: auto;
-  grid-template-rows: 60px auto;
-
-  grid-template-areas:
-    "NAV"
-    "MAIN";
+  grid-template-rows: 75px auto;
 
   height: 100vh;
 }
