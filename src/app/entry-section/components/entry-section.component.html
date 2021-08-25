@@ -22,7 +22,6 @@
   </div>
 
   <app-modal id="login_modal" class="hhidden">
-    Dialog Header
-    <button (click)="closeDialog()">Close Dialog</button>
+    <app-login-form (closeEvent)="closeDialog()"></app-login-form>
   </app-modal>
 </section>

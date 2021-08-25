@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="header flex align-center justify-center">
+    <h3>Login</h3>
+
+    <span (click)="closeModal()" class="flex align-center justify-center">x</span>
+  </div>
+
+  <div class="login-type-wrapper">
+    <div class="flex align-center">
+      <span id="phone" (click)="handleLoginType('phone')"
+        class="flex flex-column align-center justify-space-between">Phone Number</span>
+      <span id="email" (click)="handleLoginType('email')"
+        class="username-section active flex flex-column align-center justify-space-between">UserID or E-mail</span>
+    </div>
+  </div>
+
+  <div class="form-wrapper flex flex-column align-center">
+    <div class="flex flex-column">
+      <input #email type="text" placeholder="{{ userInputPlaceholder }}" (change)="handleChangeEmailInput(email.value)">
+      <span>Forgot?</span>
+    </div>
+    <div class="flex flex-column">
+      <input #password type="password" placeholder="Password" (change)="handleChangePasswordInput(password.value)">
+      <span>Forgot?</span>
+    </div>
+    <button>Login</button>
+    <button class="flex align-center justify-center">
+      <img src="assets/svg/qrcode-icon.png" alt="">
+      Login with qr code</button>
+    <p>
+      New to Jeton?
+      <a href="#">Sign up here.</a>
+    </p>
+  </div>
+</div>

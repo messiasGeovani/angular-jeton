@@ -20,6 +20,8 @@ export class EntrySectionComponent implements OnInit {
   closeDialog() {
     const modal: Element | null = document.getElementById('login_modal');
 
+    console.log('here');
+
     modal?.classList.remove('sshow');
     modal?.classList.add('hhidden');
   }
