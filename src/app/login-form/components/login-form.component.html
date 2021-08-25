@@ -16,7 +16,8 @@
 
   <div class="form-wrapper flex flex-column align-center">
     <div class="flex flex-column">
-      <input #email type="text" placeholder="{{ userInputPlaceholder }}" (change)="handleChangeEmailInput(email.value)">
+      <input #email [type]="inputType" [placeholder]="userInputPlaceholder"
+        (change)="handleChangeEmailInput(email.value)">
       <span>Forgot?</span>
     </div>
     <div class="flex flex-column">
