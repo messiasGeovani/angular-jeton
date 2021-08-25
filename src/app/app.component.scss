@@ -6,11 +6,11 @@ div.content {
 
   height: 100vh;
 
-  > header {
+  header {
     z-index: 3;
   }
 
-  > main {
+  main {
     max-height: 100%;
     overflow-y: auto;
   }

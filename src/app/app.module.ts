@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BusinessAccountSectionModule } from './business-account-section/business-account-section.module';
 import { DownloadSectionModule } from './download-section/download-section.module';
 import { EntrySectionModule } from './entry-section/entry-section.module';
+import { FooterSectionModule } from './footer-section/footer-section.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { PaymentSectionModule } from './payment-section/payment-section.module';
 
@@ -17,6 +18,7 @@ import { PaymentSectionModule } from './payment-section/payment-section.module';
     BusinessAccountSectionModule,
     PaymentSectionModule,
     DownloadSectionModule,
+    FooterSectionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

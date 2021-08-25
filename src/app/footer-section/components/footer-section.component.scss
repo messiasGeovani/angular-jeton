@@ -1,0 +1,78 @@
+div.container {
+  height: 30%;
+
+  background: white;
+
+  border-top: 1px solid var(--quaternary);
+
+  padding: 0 18vw 40px;
+
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: lightgray;
+  }
+
+  @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    padding: 0 13vw 40px;
+  }
+}
+
+ul.footer-list {
+  margin-bottom: 20px;
+
+  li {
+    display: inline;
+
+    + li {
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+span.tag {
+  padding: 7px 12px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: lightgray;
+  cursor: pointer;
+
+  + span {
+    margin-left: 13px;
+  }
+}
+
+button.signin-button {
+  width: 150px;
+  height: 50px;
+
+  margin: 50px 0;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary-hover);
+  }
+
+  &:active {
+    transition: opacity 0.2s;
+    opacity: 0.6;
+  }
+}
