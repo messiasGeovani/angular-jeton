@@ -175,3 +175,19 @@ div.login-type-wrapper {
     }
   }
 }
+
+/* ----------- Google Pixel ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  div.container {
+    width: 90vw;
+  }
+
+  div.header span {
+    left: 23vw;
+  }
+}
