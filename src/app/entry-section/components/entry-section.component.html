@@ -6,7 +6,7 @@
       easily, and fast.
     </h2>
 
-    <button class="primary-button signup-button">Sign up</button>
+    <button class="primary-button signup-button" (click)="showDialog()">Sign up</button>
 
     <div class="marketplace-wrapper flex align-center justify-between">
       <img src="assets/svg/appstore.svg" alt="">
@@ -20,4 +20,9 @@
       <img src="assets/images/app-screen.png" class="app-screen" alt="">
     </span>
   </div>
+
+  <app-modal id="login_modal" class="hhidden">
+    Dialog Header
+    <button (click)="closeDialog()">Close Dialog</button>
+  </app-modal>
 </section>
