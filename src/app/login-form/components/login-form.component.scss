@@ -56,6 +56,16 @@ div.form-wrapper {
       border-width: 2px;
       border-color: var(--primary);
     }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
   }
 
   span {

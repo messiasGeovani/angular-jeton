@@ -1,15 +1,22 @@
-import { Component, OnInit, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-login-form',
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginFormComponent implements OnInit {
   public email: string;
   public password: string;
   public userInputPlaceholder: string;
+  public inputType: 'text' | 'number';
 
   @Output() closeEvent = new EventEmitter();
 
@@ -17,6 +24,7 @@ export class LoginFormComponent implements OnInit {
     this.email = '';
     this.password = '';
     this.userInputPlaceholder = 'UserID or E-mail';
+    this.inputType = 'text';
   }
 
   ngOnInit(): void {}
@@ -43,12 +51,14 @@ export class LoginFormComponent implements OnInit {
       phoneSpanElement?.classList.add('active');
 
       this.userInputPlaceholder = 'Phone Number';
+      this.inputType = 'number';
     } else {
       phoneSpanElement?.classList.remove('active');
       emailSpanElement?.classList.remove('phone-section');
       emailSpanElement?.classList.add('username-section', 'active');
 
       this.userInputPlaceholder = 'UserID or E-mail';
+      this.inputType = 'text';
     }
   }
 }
