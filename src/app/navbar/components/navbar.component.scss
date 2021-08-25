@@ -20,9 +20,27 @@ div.navbar {
       margin-left: 20px;
     }
 
+    a,
+    span {
+      color: darkgray;
+    }
+
     a {
-      color: inherit;
       text-decoration: none;
+    }
+
+    span {
+      cursor: pointer;
+
+      img {
+        &:first-child {
+          margin-right: 5px;
+        }
+
+        &:last-child {
+          max-height: 30px;
+        }
+      }
     }
   }
 }
