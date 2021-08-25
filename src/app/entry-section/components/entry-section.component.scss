@@ -7,7 +7,7 @@ div.container {
 
   h2 {
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -62,7 +62,7 @@ div.app-screen-wrapper {
     background-size: cover;
     border-radius: 40px;
     box-shadow: 1px 2px 7px var(--gray);
-    padding: 62px 21px;
+    padding: 59px 18px;
   }
 
   img {
@@ -76,7 +76,8 @@ div.app-screen-wrapper {
     > span {
       height: 510px;
       width: 270px;
-      padding: 49px 16px;
+      padding: 45.5px 14px 45.2px;
+      padding-right: 13px;
     }
   }
 }

@@ -1,0 +1,35 @@
+div.container {
+  height: 70%;
+
+  background: var(--tertiary);
+
+  padding: 50px 100px 0;
+  padding-right: 0;
+
+  h2,
+  h2 > span {
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  h2 > span {
+    color: var(--primary);
+  }
+
+  p {
+    margin-top: 30px;
+  }
+
+  @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    height: 80%;
+  }
+}
+
+div.dashboard-screen-wrapper {
+  height: 100%;
+  align-items: flex-end;
+
+  img {
+    max-height: 55vh;
+  }
+}
