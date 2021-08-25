@@ -40,7 +40,7 @@ div.card {
 
   h3 {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1em;
     text-transform: uppercase;
     margin-bottom: 25px;
   }
@@ -80,5 +80,29 @@ button.use-button {
   &:active {
     transition: opacity 0.2s;
     opacity: 0.6;
+  }
+}
+
+/* ----------- Google Pixel ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  section.container {
+    height: auto;
+    padding: 50px 30px 0;
+  }
+
+  div.card {
+    width: 100%;
+    margin: 60px auto 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  button.use-button {
+    width: 100%;
   }
 }

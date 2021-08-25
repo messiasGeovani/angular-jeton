@@ -76,3 +76,31 @@ button.signin-button {
     opacity: 0.6;
   }
 }
+
+/* ----------- Google Pixel ----------- */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  section.container {
+    height: auto;
+    padding: 30px 30px;
+  }
+
+  ul.footer-list {
+    li {
+      display: inherit;
+
+      + li {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  button.use-button {
+    width: 100%;
+  }
+}
