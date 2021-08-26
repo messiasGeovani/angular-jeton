@@ -6,7 +6,7 @@
       easily, and fast.
     </h2>
 
-    <button class="primary-button signup-button" (click)="showDialog()">Sign up</button>
+    <button class="primary-button signup-button" (click)="handleOpenModal()">Sign up</button>
 
     <div class="marketplace-wrapper flex align-center">
       <img src="assets/svg/appstore.svg" alt="">
@@ -21,7 +21,5 @@
     </span>
   </div>
 
-  <app-modal id="login_modal" class="hhidden">
-    <app-login-form (closeEvent)="closeDialog()"></app-login-form>
-  </app-modal>
+  <app-modal class="hhidden" id="login_modal" (closeEmit)="handleCloseModal()"></app-modal>
 </section>

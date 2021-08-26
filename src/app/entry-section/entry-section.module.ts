@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EntrySectionComponent } from './components';
-import { ModalComponent } from '../modal/components';
-import { LoginFormComponent } from '../login-form/components';
+import { ModalModule } from '../modal/modal.module';
 
 @NgModule({
-  declarations: [EntrySectionComponent, ModalComponent, LoginFormComponent],
-  imports: [CommonModule],
+  declarations: [EntrySectionComponent],
+  imports: [CommonModule, ModalModule],
   exports: [EntrySectionComponent],
 })
 export class EntrySectionModule {}
