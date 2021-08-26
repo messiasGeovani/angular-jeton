@@ -16,7 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Production Deploy.
 
-Run `git push heroku master` for a production deploy. You can access the production app on `https://boiling-woodland-19341.herokuapp.com/`.
+Run `git push heroku master` for a production deploy. You can access the production app on https://boiling-woodland-19341.herokuapp.com/.
 Ps: You must be logged in to the heroku platform to deploy.
 
 ## Running unit tests
