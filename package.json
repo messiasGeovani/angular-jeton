@@ -5,12 +5,12 @@
     "ng": "ng",
     "start": "node dist/jeton/server/main.js",
     "start:dev": "ng serve",
-    "build": "ng build",
+    "build": "ng build && ng run jeton:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run jeton:serve-ssr",
     "serve:ssr": "node dist/jeton/server/main.js",
-    "build:ssr": "ng build && ng run jeton:server",
+    "build:local": "ng build",
     "prerender": "ng run jeton:prerender"
   },
   "engines": {
