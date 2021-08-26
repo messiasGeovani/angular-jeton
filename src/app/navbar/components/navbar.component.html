@@ -2,8 +2,12 @@
   <div class="navbar flex align-center justify-space-between">
     <img src="assets/svg/logo.svg" alt="">
 
-    <div class="mobile-hide">
-      <ul class="flex align-center">
+    <span (click)="handleOpenDropdown()" class="mobile-show-only">
+      <img src="assets/svg/menu-icon.svg" alt="">
+    </span>
+
+    <div class="mobile-list-wrapper mobile-hide" id="dropdown_menu">
+      <ul class="flex align-center mobile-flex-column mobile-justify-space-between">
         <li>
           <a href="#">Business</a>
         </li>

@@ -12,6 +12,10 @@ div.navbar {
     max-height: 60px;
   }
 
+  > span {
+    cursor: pointer;
+  }
+
   li {
     display: inline;
     text-transform: uppercase;
@@ -43,5 +47,30 @@ div.navbar {
         }
       }
     }
+  }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
+  (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4),
+  (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  div.navbar {
+    padding: 0 30px;
+
+    li + li {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  div.mobile-list-wrapper {
+    background: white;
+    padding: 30px;
+    box-shadow: 1px 1px 6px var(--gray);
+    position: absolute;
+    right: 10px;
+    top: 77px;
   }
 }
