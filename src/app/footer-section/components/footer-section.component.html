@@ -29,7 +29,7 @@
       <span class="tag">JetonPAY</span>
     </div>
 
-    <button class="signin-button mobile-show-only">
+    <button class="signin-button mobile-show-only" (click)="handleOpenModal()">
       Sign in
     </button>
 
@@ -37,8 +37,9 @@
     </p>
   </div>
   <div class="flex align-center justify-center mobile-hide">
-    <button class="signin-button">
+    <button class="signin-button" (click)="handleOpenModal()">
       Sign in
     </button>
   </div>
+  <app-modal class="hhidden" id="login_modal_footer" (closeEmit)="handleCloseModal()"></app-modal>
 </section>
