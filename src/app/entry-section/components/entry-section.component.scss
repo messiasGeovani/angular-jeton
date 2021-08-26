@@ -106,3 +106,9 @@ div.app-screen-wrapper {
     }
   }
 }
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  section.container {
+    align-items: flex-start;
+  }
+}
