@@ -14,6 +14,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Production Deploy.
+
+Run `git push heroku master` for a production deploy. You can access the production app on `https://boiling-woodland-19341.herokuapp.com/`.
+Ps: You must be logged in to the heroku platform to deploy.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
